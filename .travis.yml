@@ -21,7 +21,7 @@ matrix:
   allow_failures:
     - env: TARGET='spec:ir'
 
-script: "ant $TARGET"
+script: "mvn && ant $TARGET"
 install: /bin/true
 notifications:
   irc:
